@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/weather_day_by_hours_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/weather_icon"/>
+
+        <TextView
+            android:id="@+id/weather_day_by_hours_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:text="03:00"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/weather_day_by_hours_report_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:layout_below="@id/weather_day_by_hours_time_title"
+            android:layout_centerHorizontal="true"
+            android:text="Clear"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/weather_day_by_hours_temperature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="14*C"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"/>
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/temperature_icon"
+            android:layout_toStartOf="@id/weather_day_by_hours_temperature_title"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/weather_day_by_hours_wind_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather_day_by_hours_temperature_title"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="5 m/s"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toStartOf="@id/weather_day_by_hours_wind_title"
+            android:src="@drawable/wind_icon"
+            android:layout_alignBottom="@id/weather_day_by_hours_wind_title"
+            android:layout_marginEnd="3dp"/>
+
+        <TextView
+            android:id="@+id/weather_day_by_hours_humidity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather_day_by_hours_wind_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="96%"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/humidity_icon"
+            android:layout_toStartOf="@id/weather_day_by_hours_humidity_title"
+            android:layout_alignBottom="@id/weather_day_by_hours_humidity_title"
+            android:layout_marginEnd="5dp"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
